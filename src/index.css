@@ -5,9 +5,54 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  display: grid;
+  place-content: center;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.header {
+  min-width: 800px;
+  min-height: 200px;
+  text-align: center;
+  background-image: url(https://assets.eldesconcierto.cl/2022/05/junio.jpg);
+  color: blue;
+  font-size: 333%;
+  font-weight: 900;
+  margin-top: 5%;
+}
+
+.orden-filtro {
+  min-height: 100px;
+  background-color: aliceblue;
+  padding: 30px;
+  font-weight: bold;
+}
+
+footer{
+  text-align: center;
+}
+
+.listaDatos{
+  background-color: beige;
+  font-weight: bold;
+}
+
+.noHayRegisto{
+  text-align: center;
+  place-content: center;
+}
+
+.encabezado{
+  color: blue;
+  font-size: large;
+  font-weight: bold;
+}
+
+li{
+  list-style:none
 }

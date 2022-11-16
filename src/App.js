@@ -1,23 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import MiApi from "./components/MiApi";
+import Alert from 'react-bootstrap/Alert';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+        <header className='header'>
+          <p>Feriados Chile 2022</p>
+        </header>
+
+        <MiApi/>
+
+        <footer>
+          <Alert key='info' variant='info'>
+            Información obtenida desde {' '}
+            <Alert.Link target='blank' href="https://www.feriadosapp.com/api/">https://www.feriadosapp.com/api/</Alert.Link>
+          </Alert>          
+        </footer>
     </div>
   );
 }
